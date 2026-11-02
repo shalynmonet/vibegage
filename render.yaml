@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: vibegage
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.22.1
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+      - key: TWITCH_REDIRECT_URI
+        value: https://vibegage.sha-i.com/auth/twitch/callback
