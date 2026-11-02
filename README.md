@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000). In a second PowerShell term
 npm run sim -- --offline --channels=4 --rate=18
 ```
 
-Let it run for 15 seconds for the first summary. The simulator posts realistic fake chat locally, including hype, questions, inside jokes, and disagreements. The dashboard refreshes every 15 seconds and summarizes a rolling three minute window. Click **Answered** to clear a caught question.
+Let it run for 15 seconds for the first summary. The simulator posts realistic fake chat locally, including hype, questions, inside jokes, and disagreements themed around HAUNT, a spooky minesweeper game with ghosts and chalk. The dashboard refreshes every 15 seconds and summarizes a rolling three minute window. Click **Answered** to clear a caught question.
 
 `--channels` accepts 2 to 4. `--rate` controls approximate messages per second. Stop the simulator and server with **Ctrl+C**.
 
