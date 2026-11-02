@@ -3,6 +3,8 @@ services:
     name: vibegage
     runtime: node
     plan: free
+    domains:
+      - vibegage.sha-i.com
     buildCommand: npm ci && npm run build
     startCommand: npm start
     healthCheckPath: /api/health
