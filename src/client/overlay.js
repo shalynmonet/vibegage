@@ -14,8 +14,8 @@ function render(data) {
   const hype = leader(channels, "score", "hyped");
   const confused = leader(channels, "score", "confused");
   score.innerHTML = [
-    tile("📣 MOST MOTION", loud, c => `${c.messageCount} messages · ${c.vibe} vibe`, "#c5fa79", !!loud),
-    tile("🔥 MOST HYPED", hype, c => `${c.score}/100 intensity · ${c.topics?.[0] || "good energy"}`, "#ff6ba9", !!hype, channels.length ? "No hype spike yet" : "Waiting on chat…", channels.length ? "chat is chilling for now" : "chat simulator standing by"),
+    tile("📣 HEAVIEST MOTION", loud, c => `${c.messageCount} messages · ${c.vibe} vibe`, "#c5fa79", !!loud),
+    tile("🔥 HEAVIEST AURA", hype, c => `${c.score}/100 intensity · ${c.topics?.[0] || "good energy"}`, "#ff6ba9", !!hype, channels.length ? "No hype spike yet" : "Waiting on chat…", channels.length ? "chat is chilling for now" : "chat simulator standing by"),
     tile("🫠 MOST CONFUSED", confused, c => `${c.score}/100 intensity · ${c.topics?.[0] || "many questions"}`, "#8c9cff", !!confused, channels.length ? "No confusion spike" : "Waiting on chat…", channels.length ? "chat is following along" : "chat simulator standing by")
   ].join("");
   document.querySelector("#moment").textContent = data.consensus || "THE COLLAB VIBE CHECK";
